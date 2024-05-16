@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 3</title>
+</head>
+<body>
+  <p id="meuParagrafo">Texto inicial</p>
+  <button id="meuBotao">Clique aqui</button>
+
+  <script>
+    const meuBotao = document.querySelector('#meuBotao');
+    const meuParagrafo = document.querySelector('#meuParagrafo');
+
+    meuBotao.addEventListener('click', function() {
+      meuParagrafo.textContent = 'Botão clicado!';
+      meuParagrafo.style.fontSize = '20px'; // Altera o tamanho da fonte
+    });
+  </script>
+</body>
+</html>
+
